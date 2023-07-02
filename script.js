@@ -44,6 +44,7 @@ function generateQuote() {
 
     .catch(err => {
         document.querySelector('.quote').innerHTML = 'Please try again later!';
+        document.querySelector('.author').innerHTML = "";
         console.log(err);
     })
 }
