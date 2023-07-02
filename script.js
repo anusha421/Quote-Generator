@@ -39,7 +39,7 @@ function generateQuote() {
     .then(data => {
         document.querySelector('.quote').innerHTML = '" ' + data.content + ' "';
         document.querySelector('.author').innerHTML = '~ ' + data.author;
-        console.log(content.content)
+        console.log(data.content)
     })
 
     .catch(err => {
